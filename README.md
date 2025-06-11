@@ -14,11 +14,11 @@ Generate a unique digital identity card based on your social profiles and follow
 
 ### Main Form
 
-![Main Form](./esta.png)
+![Main Form](public/esta.png)
 
 ### Passport Example
 
-![Passport Example](./esta2.png)
+![Passport Example](public/esta2.png)
 
 ## How to use
 
