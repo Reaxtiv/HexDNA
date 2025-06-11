@@ -1,0 +1,214 @@
+.main-bg {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #b6f36b 0%, #65a30d 50%, #000 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 3rem;
+}
+
+.logo {
+  font-size: 3.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 12px #0008;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 2px 12px #0008;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 2.5rem;
+  text-shadow: 0 2px 8px #0008;
+}
+
+.inputs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 3.5rem;
+  width: 90vw;
+  max-width: 1100px;
+  margin-bottom: 2.5rem;
+}
+
+.input-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #fff8;
+  border-radius: 1.2rem;
+  padding: 1.1rem 1rem 1.3rem 1rem;
+  box-shadow: 0 2px 12px #0002;
+  min-height: 90px;
+  transition: transform 0.1s;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+.input-card:hover {
+  transform: scale(1.03);
+}
+.input-card .icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.input {
+  width: 100%;
+  height: 36px;
+  border-radius: 0.8rem;
+  font-size: 1rem;
+  padding: 0 0.7rem;
+  border: none;
+  outline: none;
+  background: #fff;
+  margin-bottom: 0.3rem;
+}
+
+.input.followers {
+  width: 90%;
+  height: 28px;
+  font-size: 0.92rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0;
+  padding: 0 0.5rem;
+  color: #444;
+  background: #f3f3f3;
+  border: 1px solid #e0e0e0;
+}
+
+.dna-card-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 2.2rem 0 1.2rem 0;
+}
+
+.input-card.dna {
+  min-width: 260px;
+  max-width: 350px;
+  width: 100%;
+  background: #b6f36b33;
+  position: relative;
+  overflow: visible;
+  align-items: flex-start;
+}
+
+.button.generate-btn {
+  background: #e53935;
+  color: white;
+  padding: 1.2rem 3rem;
+  border-radius: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  box-shadow: 0 2px 12px #0004;
+  transition: background 0.2s, transform 0.1s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button.generate-btn:disabled {
+  background: #888;
+  cursor: not-allowed;
+}
+.button.generate-btn:not(:disabled):hover {
+  background: #b71c1c;
+  transform: scale(1.05);
+}
+
+/* PASSPORT DNI STYLES */
+.passport-dni {
+  border: 4px solid #6f42c1;
+  border-radius: 1.2rem;
+  background: #fff9;
+  padding: 2rem 4.5rem;
+  margin-top: 2rem;
+  box-shadow: 0 2px 16px #0002;
+  max-width: 700px;
+  min-width: 420px;
+  min-height: 180px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.passport-dni-header {
+  display: flex;
+  align-items: center;
+  gap: 2.2rem;
+  margin-bottom: 1.2rem;
+  justify-content: flex-start;
+}
+
+.passport-dni-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 1rem;
+  background: #eee;
+  border: 2px solid #fff;
+}
+
+.passport-dni-name {
+  font-size: 2.1rem;
+  font-weight: bold;
+  color: #6f42c1;
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.04em;
+}
+
+.passport-dni-rank {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 0.2rem;
+  color: #6f42c1;
+}
+
+.passport-dni-info {
+  margin-bottom: 1.2rem;
+  color: #6f42c1;
+  font-size: 1.1rem;
+}
+.passport-dni-label {
+  font-weight: bold;
+  color: #6f42c1;
+  margin-right: 0.3rem;
+}
+.passport-dni-followers {
+  font-size: 0.95rem;
+  color: #6f42c1;
+  margin-bottom: 0.7rem;
+  margin-left: 1.5rem;
+}
+
+.passport-dni-stars {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.2rem;
+  color: #6f42c1 !important;
+}
+.passport-dni-stars span {
+  color: #6f42c1 !important;
+}
+
+/* Brand colors for each network */
+.youtube { background: #ff000033; }
+.ens     { background: #6f42c133; }
+.discord { background: #5865f233; }
+.github  { background: #24292f33; }
+.twitter { background: #1da1f233; }
+.telegram{ background: #229ed933; }
+.dna     { background: #b6f36b33; }
